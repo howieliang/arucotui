@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmy_project_docs=globalThis.webpackChunkmy_project_docs||[]).push([[1903],{1912(o){o.exports=JSON.parse('{"blogBasePath":"/arucotui/blog","blogTitle":"Blog","authorsListPath":"/arucotui/blog/authors"}')}}]);

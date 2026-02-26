@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmy_project_docs=globalThis.webpackChunkmy_project_docs||[]).push([[9784],{5330(o){o.exports=JSON.parse('{"metadata":{"permalink":"/arucotui/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

@@ -1,2 +1,0 @@
-# arucotui
-arucotui opensource repo

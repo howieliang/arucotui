@@ -1,5 +1,5 @@
 //*********************************************
-// Example Code: ArUco-TUI Client v26.1
+// Example Code: ArUco-TUI Client v26.2
 // ArUCo Fiducial Marker Detection in OpenCV Python and then send to Processing via OSC
 // Tracking Tangibles on a Surface or Flat Panel Display with 15mm-width Markers
 // Rong-Hao Liang: r.liang@tue.nl

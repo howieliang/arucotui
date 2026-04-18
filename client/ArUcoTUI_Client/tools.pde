@@ -137,18 +137,22 @@ void registerPlanePoints() {
 }
 
 void registerPlaneOrientation(){
-  global_rx= (tm.tags[cornersID[0]].rx + tm.tags[cornersID[1]].rx + tm.tags[cornersID[2]].rx)/3;
+  global_rx= ((tm.tags[cornersID[0]].rx>0?tm.tags[cornersID[0]].rx-TWO_PI:tm.tags[cornersID[0]].rx) 
+            + (tm.tags[cornersID[1]].rx>0?tm.tags[cornersID[1]].rx-TWO_PI:tm.tags[cornersID[1]].rx) 
+            + (tm.tags[cornersID[2]].rx>0?tm.tags[cornersID[2]].rx-TWO_PI:tm.tags[cornersID[2]].rx))/3;
   global_ry= (tm.tags[cornersID[0]].ry + tm.tags[cornersID[1]].ry + tm.tags[cornersID[2]].ry)/3;
   global_rz= (tm.tags[cornersID[0]].rz + tm.tags[cornersID[1]].rz + tm.tags[cornersID[2]].rz)/3;
-  println(global_rx,global_ry,global_rz);
+  //println("Calibrated",global_rx,global_ry,global_rz);
 }
-
 void registerPlaneOrientation(PVector[] cornerPointsR){
-  global_rx= (cornerPointsR[0].x + cornerPointsR[1].x + cornerPointsR[2].x)/3;
+  global_rx= ((cornerPointsR[0].x>0?cornerPointsR[0].x-TWO_PI:cornerPointsR[0].x) 
+            + (cornerPointsR[1].x>0?cornerPointsR[1].x-TWO_PI:cornerPointsR[1].x) 
+            + (cornerPointsR[2].x>0?cornerPointsR[2].x-TWO_PI:cornerPointsR[2].x))/3;
   global_ry= (cornerPointsR[0].y + cornerPointsR[1].y + cornerPointsR[2].y)/3;
   global_rz= (cornerPointsR[0].z + cornerPointsR[1].z + cornerPointsR[2].z)/3;
-  println(global_rx,global_ry,global_rz);
+  //println("Calibrated",global_rx,global_ry,global_rz);
 }
+
 
 boolean cornersDetected() {
   if (tm.tags[cornersID[0]].active &&
